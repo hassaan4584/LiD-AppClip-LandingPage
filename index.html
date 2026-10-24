@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Leben in Deutschland — App Clip</title>
+  <meta name="description" content="Preview 10 sample questions from Leben in Deutschland." />
+  <style>
+    :root {
+      --bg: #f5f7fb;
+      --card: #ffffff;
+      --text: #1f2937;
+      --muted: #6b7280;
+      --primary: #1d4ed8;
+      --primary-dark: #1e3a8a;
+      --border: #dfe7f5;
+    }
+
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: linear-gradient(180deg, #eef4ff 0%, var(--bg) 100%);
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 32px 28px;
+      max-width: 640px;
+      width: 100%;
+      box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
+    }
+
+    .eyebrow {
+      display: inline-block;
+      background: #dbeafe;
+      color: var(--primary-dark);
+      font-weight: 700;
+      font-size: 12px;
+      border-radius: 999px;
+      padding: 8px 12px;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 18px 0 12px;
+      font-size: clamp(2.1rem, 4vw, 3rem);
+      line-height: 1.1;
+    }
+
+    p {
+      color: var(--muted);
+      font-size: 1.05rem;
+      line-height: 1.6;
+      margin: 0 0 22px;
+    }
+
+    .badge {
+      display: inline-block;
+      background: #eff6ff;
+      color: var(--primary-dark);
+      border: 1px solid #bfdbfe;
+      border-radius: 999px;
+      padding: 8px 12px;
+      font-weight: 600;
+      margin-bottom: 18px;
+    }
+
+    .cta {
+      display: inline-block;
+      background: var(--primary);
+      color: white;
+      text-decoration: none;
+      padding: 14px 22px;
+      border-radius: 12px;
+      font-weight: 700;
+      transition: background 0.2s ease;
+    }
+
+    .cta:hover {
+      background: var(--primary-dark);
+    }
+
+    .meta {
+      margin-top: 20px;
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <div class="eyebrow">App Clip Preview</div>
+    <h1>Leben in Deutschland</h1>
+    <div class="badge">10 sample questions</div>
+    <p>
+      Try a quick preview of our learning questions before opening the full app.
+      This page is just a lightweight landing page for the App Clip experience.
+    </p>
+
+    <a class="cta" href="your-app-clip-url-or-app-link">Open App Clip</a>
+
+    <div class="meta">
+      This is a placeholder landing page for the App Clip experience URL.
+    </div>
+  </main>
+</body>
+</html>
