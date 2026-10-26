@@ -1,0 +1,22 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": [
+          "A9Q57L84LX.com.hassaan.LebenInDeutschland"
+        ],
+        "components": [
+          {
+            "/": "/clip",
+            "comment": "Open the App Clip landing page"
+          }
+        ]
+      }
+    ]
+  },
+  "appclips": {
+    "apps": [
+      "A9Q57L84LX.com.hassaan.LebenInDeutschland.Clip"
+    ]
+  }
+}
