@@ -115,6 +115,33 @@
       box-shadow: 0 14px 26px rgba(15, 118, 110, 0.24);
     }
 
+    .cta-row {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-top: 24px;
+    }
+
+    .cta.secondary {
+      background: transparent;
+      color: var(--primary-dark);
+      border: 1px solid rgba(15, 118, 110, 0.22);
+      box-shadow: none;
+    }
+
+    .cta.secondary:hover {
+      background: rgba(15, 118, 110, 0.04);
+      box-shadow: none;
+    }
+
+    .note {
+      margin-top: 18px;
+      color: var(--muted);
+      font-size: 0.9rem;
+      line-height: 1.6;
+    }
+
     .small {
       margin-top: 20px;
       font-size: 12px;
@@ -139,7 +166,7 @@
     <h1>Leben in Deutschland</h1>
     <p>
       Try a quick preview of the exam-style questions before opening the full app.
-      This lightweight App Clip experience helps learners test the flow in seconds.
+      This is the direct App Clip experience for supported iPhone devices.
     </p>
 
     <div class="stats">
@@ -157,7 +184,14 @@
       </div>
     </div>
 
-    <a class="cta" href="https://lebenindeutschland2027.de/clip">Open App Clip</a>
+    <div class="cta-row">
+      <a class="cta" href="https://lebenindeutschland2027.de/clip">Open App Clip</a>
+      <a class="cta secondary" href="https://lebenindeutschland2027.de/">Back to Homepage</a>
+    </div>
+
+    <p class="note">
+      The full-page experience is a separate entry route for visitors who want a clearer landing page before triggering the App Clip flow.
+    </p>
 
     <p class="small">
       Designed for quick App Clip activation on supported iPhone devices.

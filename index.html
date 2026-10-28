@@ -96,10 +96,37 @@
       box-shadow: 0 14px 26px rgba(15, 118, 110, 0.24);
     }
 
+    .cta-row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 14px;
+      margin-top: 10px;
+    }
+
+    .cta.secondary {
+      background: transparent;
+      color: var(--primary-dark);
+      border: 1px solid rgba(15, 118, 110, 0.22);
+      box-shadow: none;
+    }
+
+    .cta.secondary:hover {
+      background: rgba(15, 118, 110, 0.04);
+      box-shadow: none;
+    }
+
     .meta {
       margin-top: 18px;
       font-size: 0.9rem;
       color: var(--muted);
+    }
+
+    .note {
+      margin-top: 14px;
+      font-size: 0.85rem;
+      color: var(--muted);
+      line-height: 1.6;
     }
   </style>
 </head>
@@ -110,10 +137,17 @@
     <div class="badge">10 sample questions</div>
     <p>
       Try a quick preview of our learning questions before opening the full app.
-      This page is designed to work as a lightweight App Clip entry point for quick access on iPhone.
+      This page is designed as the direct App Clip entry point for quick access on supported iPhone devices.
     </p>
 
-    <a class="cta" href="https://lebenindeutschland2027.de/clip">Open App Clip</a>
+    <div class="cta-row">
+      <a class="cta" href="https://lebenindeutschland2027.de/clip">Open App Clip</a>
+      <a class="cta secondary" href="https://lebenindeutschland2027.de/full-page-experience">Full page experience</a>
+    </div>
+
+    <div class="note">
+      Use “Open App Clip” for the direct App Clip launch. Choose “Full page experience” for a dedicated landing page before the App Clip flow.
+    </div>
 
     <div class="meta">
       Production App Clip URL: https://lebenindeutschland2027.de/clip
