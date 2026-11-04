@@ -1,157 +1,520 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Leben in Deutschland — App Clip</title>
-  <meta name="description" content="Preview the Leben in Deutschland App Clip and sample questions before opening the full app." />
-  <style>
-    :root {
-      --bg: #eef7f5;
-      --card: #ffffff;
-      --text: #12242f;
-      --muted: #536777;
-      --primary: #0f766e;
-      --primary-dark: #115e59;
-      --border: #dfe9ef;
-      --shadow: 0 20px 42px rgba(15, 118, 110, 0.12);
-    }
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Free Leben in Deutschland Practice App | No Ads | German Citizenship Exam Prep</title>
+    <meta
+      name="description"
+      content="Prepare for the German citizenship exam with a free, ad-free Leben in Deutschland practice app. Study questions, mock tests, and exam preparation without paying or seeing ads."
+    />
+    <meta name="robots" content="index,follow" />
+    <meta name="keywords" content="Leben in Deutschland, German citizenship exam, free German citizenship practice, no ads app, German test prep, citizenship exam study" />
+    <link rel="canonical" href="https://lebenindeutschland2027.de/" />
+    <meta property="og:title" content="Free Leben in Deutschland Practice App" />
+    <meta property="og:description" content="Free, ad-free practice for the German citizenship exam and Life in Germany test." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://lebenindeutschland2027.de/" />
+    <meta property="og:image" content="https://lebenindeutschland2027.de/og-image.png" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": ["WebSite", "Organization"],
+        "name": "Leben in Deutschland",
+        "url": "https://lebenindeutschland2027.de/",
+        "description": "Free, ad-free practice app and study resource for the German citizenship exam and Leben in Deutschland test.",
+        "sameAs": [
+          "https://lebenindeutschland2027.de/",
+          "https://lebenindeutschland2027.de/clip",
+          "https://lebenindeutschland2027.de/full-page-experience"
+        ]
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Leben in Deutschland",
+        "applicationCategory": "EducationApplication",
+        "operatingSystem": ["iOS", "Web"],
+        "description": "Free, ad-free practice app for the German citizenship exam and Leben in Deutschland test.",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "EUR",
+          "availability": "https://schema.org/InStock"
+        },
+        "isAccessibleForFree": true,
+        "featureList": [
+          "Free to use",
+          "No ads",
+          "German citizenship exam practice",
+          "Leben in Deutschland study content",
+          "App Clip compatible"
+        ],
+        "url": "https://lebenindeutschland2027.de/"
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Is the app free?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. The goal is to make Leben in Deutschland study content free to use and free from ads."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does it have ads?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. The project is designed to be ad-free and subscription-free for learners preparing for the German citizenship exam."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What does it help with?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "It supports preparation for the German citizenship exam and the Leben in Deutschland test through practice questions and study content."
+            }
+          }
+        ]
+      }
+    </script>
+    <style>
+      :root {
+        --bg: #ecf8f4;
+        --card: #ffffff;
+        --primary: #0f766e;
+        --primary-dark: #0d5d55;
+        --accent: #dffaf1;
+        --text: #12242f;
+        --muted: #536777;
+        --border: #dfe9ef;
+        --shadow: 0 22px 50px rgba(15, 118, 110, 0.14);
+      }
 
-    * { box-sizing: border-box; }
+      * { box-sizing: border-box; }
 
-    body {
-      margin: 0;
-      min-height: 100vh;
-      display: grid;
-      place-items: center;
-      padding: 24px;
-      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", sans-serif;
-      background: linear-gradient(135deg, #eef9f8 0%, #f8fafc 100%);
-      color: var(--text);
-    }
+      html {
+        scroll-behavior: smooth;
+      }
 
-    .card {
-      width: min(100%, 620px);
-      background: var(--card);
-      border: 1px solid var(--border);
-      border-radius: 24px;
-      padding: 32px 28px;
-      box-shadow: var(--shadow);
-      text-align: center;
-    }
+      body {
+        margin: 0;
+        font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", sans-serif;
+        background: linear-gradient(180deg, #edf9f7 0%, #f7fafb 100%);
+        color: var(--text);
+      }
 
-    .eyebrow {
-      display: inline-block;
-      margin-bottom: 18px;
-      padding: 8px 12px;
-      background: rgba(15, 118, 110, 0.08);
-      color: var(--primary-dark);
-      border: 1px solid rgba(15, 118, 110, 0.14);
-      border-radius: 999px;
-      font-size: 12px;
-      font-weight: 700;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-    }
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
 
-    h1 {
-      margin: 0 0 14px;
-      font-size: clamp(2.2rem, 4vw, 3rem);
-      line-height: 1.1;
-      letter-spacing: -0.05em;
-    }
+      .container {
+        width: min(1120px, calc(100% - 32px));
+        margin: 0 auto;
+      }
 
-    .badge {
-      display: inline-block;
-      margin-bottom: 18px;
-      padding: 8px 12px;
-      background: #eff9ff;
-      color: var(--primary-dark);
-      border: 1px solid rgba(15, 118, 110, 0.12);
-      border-radius: 999px;
-      font-weight: 600;
-    }
+      header {
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        backdrop-filter: blur(10px);
+        background: rgba(237, 249, 247, 0.8);
+        border-bottom: 1px solid rgba(15, 118, 110, 0.08);
+      }
 
-    p {
-      margin: 0 0 22px;
-      color: var(--muted);
-      font-size: 1.05rem;
-      line-height: 1.7;
-    }
+      .nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        min-height: 72px;
+        gap: 20px;
+      }
 
-    .cta {
-      display: inline-block;
-      padding: 15px 24px;
-      background: linear-gradient(180deg, var(--primary) 0%, var(--primary-dark) 100%);
-      color: white;
-      text-decoration: none;
-      font-weight: 700;
-      border-radius: 14px;
-      box-shadow: 0 12px 22px rgba(15, 118, 110, 0.2);
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
-    }
+      .brand {
+        font-weight: 800;
+        letter-spacing: -0.04em;
+        font-size: 1.15rem;
+      }
 
-    .cta:hover {
-      transform: translateY(-1px);
-      box-shadow: 0 14px 26px rgba(15, 118, 110, 0.24);
-    }
+      .nav-links {
+        display: flex;
+        align-items: center;
+        gap: 22px;
+        color: var(--muted);
+        font-size: 0.95rem;
+      }
 
-    .cta-row {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 14px;
-      margin-top: 10px;
-    }
+      .primary-btn,
+      .secondary-btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 14px 22px;
+        border-radius: 14px;
+        font-weight: 700;
+        transition: 0.2s ease;
+      }
 
-    .cta.secondary {
-      background: transparent;
-      color: var(--primary-dark);
-      border: 1px solid rgba(15, 118, 110, 0.22);
-      box-shadow: none;
-    }
+      .primary-btn {
+        background: linear-gradient(180deg, var(--primary) 0%, var(--primary-dark) 100%);
+        color: white;
+        box-shadow: 0 16px 28px rgba(15, 118, 110, 0.18);
+      }
 
-    .cta.secondary:hover {
-      background: rgba(15, 118, 110, 0.04);
-      box-shadow: none;
-    }
+      .secondary-btn {
+        color: var(--primary-dark);
+        background: rgba(15, 118, 110, 0.06);
+        border: 1px solid rgba(15, 118, 110, 0.15);
+      }
 
-    .meta {
-      margin-top: 18px;
-      font-size: 0.9rem;
-      color: var(--muted);
-    }
+      .primary-btn:hover,
+      .secondary-btn:hover {
+        transform: translateY(-1px);
+      }
 
-    .note {
-      margin-top: 14px;
-      font-size: 0.85rem;
-      color: var(--muted);
-      line-height: 1.6;
-    }
-  </style>
-</head>
-<body>
-  <main class="card">
-    <div class="eyebrow">App Clip Preview</div>
-    <h1>Leben in Deutschland</h1>
-    <div class="badge">10 sample questions</div>
-    <p>
-      Try a quick preview of our learning questions before opening the full app.
-      This page is designed as the direct App Clip entry point for quick access on supported iPhone devices.
-    </p>
+      main {
+        padding: 38px 0 80px;
+      }
 
-    <div class="cta-row">
-      <a class="cta" href="https://lebenindeutschland2027.de/clip">Open App Clip</a>
-      <a class="cta secondary" href="https://lebenindeutschland2027.de/full-page-experience">Full page experience</a>
-    </div>
+      .hero {
+        display: grid;
+        grid-template-columns: 1.2fr 0.8fr;
+        gap: 34px;
+        align-items: center;
+        padding: 52px 0 28px;
+      }
 
-    <div class="note">
-      Use “Open App Clip” for the direct App Clip launch. Choose “Full page experience” for a dedicated landing page before the App Clip flow.
-    </div>
+      .eyebrow {
+        display: inline-block;
+        padding: 8px 12px;
+        border: 1px solid rgba(15, 118, 110, 0.12);
+        border-radius: 999px;
+        background: rgba(15, 118, 110, 0.06);
+        color: var(--primary-dark);
+        font-size: 0.74rem;
+        font-weight: 800;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
 
-    <div class="meta">
-      Production App Clip URL: https://lebenindeutschland2027.de/clip
-    </div>
-  </main>
-</body>
+      h1 {
+        margin: 18px 0 18px;
+        font-size: clamp(2.7rem, 5vw, 5rem);
+        line-height: 0.95;
+        letter-spacing: -0.07em;
+      }
+
+      .lead {
+        margin: 0 0 28px;
+        max-width: 620px;
+        color: var(--muted);
+        font-size: 1.14rem;
+        line-height: 1.75;
+      }
+
+      .cta-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+        margin-bottom: 24px;
+      }
+
+      .trust-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 18px;
+        color: var(--muted);
+        font-weight: 600;
+        font-size: 0.96rem;
+      }
+
+      .trust-pill {
+        padding: 10px 14px;
+        border-radius: 999px;
+        background: rgba(255, 255, 255, 0.55);
+        border: 1px solid rgba(15, 118, 110, 0.08);
+      }
+
+      .hero-card {
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: 28px;
+        box-shadow: var(--shadow);
+        padding: 28px 24px;
+      }
+
+      .mini-label {
+        color: var(--primary-dark);
+        font-weight: 800;
+        font-size: 0.75rem;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+      }
+
+      .score {
+        font-size: clamp(2.6rem, 5vw, 4rem);
+        line-height: 1;
+        letter-spacing: -0.06em;
+        margin: 12px 0;
+        font-weight: 800;
+      }
+
+      .hero-card p {
+        margin: 0;
+        color: var(--muted);
+        line-height: 1.7;
+      }
+
+      .feature-box {
+        margin-top: 72px;
+      }
+
+      .section-heading {
+        margin: 0 0 26px;
+        font-size: clamp(2rem, 3vw, 2.8rem);
+        letter-spacing: -0.06em;
+      }
+
+      .features {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 18px;
+      }
+
+      .feature {
+        background: rgba(255, 255, 255, 0.72);
+        border: 1px solid var(--border);
+        border-radius: 20px;
+        box-shadow: 0 12px 30px rgba(18, 36, 47, 0.04);
+        padding: 24px 20px;
+      }
+
+      .feature strong {
+        display: block;
+        font-size: 1.1rem;
+        margin-bottom: 10px;
+      }
+
+      .feature p {
+        margin: 0;
+        line-height: 1.7;
+        color: var(--muted);
+      }
+
+      .faq {
+        margin-top: 72px;
+      }
+
+      .faq-list {
+        display: grid;
+        gap: 16px;
+      }
+
+      .faq-item {
+        background: rgba(255, 255, 255, 0.7);
+        border: 1px solid var(--border);
+        border-radius: 18px;
+        padding: 22px 20px;
+      }
+
+      .faq-item h3 {
+        margin: 0 0 8px;
+        font-size: 1.12rem;
+      }
+
+      .faq-item p {
+        margin: 0;
+        line-height: 1.75;
+        color: var(--muted);
+      }
+
+      .cta-banner {
+        margin-top: 72px;
+        background: linear-gradient(135deg, rgba(15, 118, 110, 0.06), rgba(15, 118, 110, 0.12));
+        border: 1px solid rgba(15, 118, 110, 0.12);
+        border-radius: 24px;
+        padding: 28px 24px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 18px;
+      }
+
+      .cta-banner h3 {
+        margin: 0 0 8px;
+        font-size: clamp(1.5rem, 2vw, 2rem);
+        letter-spacing: -0.05em;
+      }
+
+      .cta-banner p {
+        margin: 0;
+        color: var(--muted);
+      }
+
+      footer {
+        padding: 32px 0 48px;
+        color: var(--muted);
+        font-size: 0.95rem;
+      }
+
+      .footer-wrap {
+        border-top: 1px solid rgba(15, 118, 110, 0.1);
+        padding-top: 22px;
+        display: flex;
+        justify-content: space-between;
+        gap: 18px;
+        flex-wrap: wrap;
+      }
+
+      @media (max-width: 860px) {
+        .hero {
+          grid-template-columns: 1fr;
+          padding-top: 30px;
+        }
+
+        .features {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+      }
+
+      @media (max-width: 620px) {
+        .nav {
+          flex-wrap: wrap;
+          padding: 14px 0 18px;
+        }
+
+        .nav-links {
+          width: 100%;
+          justify-content: space-between;
+          gap: 10px;
+          flex-wrap: wrap;
+        }
+
+        .features {
+          grid-template-columns: 1fr;
+        }
+
+        .cta-banner {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container nav">
+        <a class="brand" href="/">Leben in Deutschland</a>
+        <nav class="nav-links" aria-label="Main navigation">
+          <a href="/about/">About</a>
+          <a href="/practice/">Practice</a>
+          <a href="/faq/">FAQ</a>
+          <a href="https://lebenindeutschland2027.de/full-page-experience/">Full Page</a>
+        </nav>
+        <a class="primary-btn" href="https://lebenindeutschland2027.de/clip">Open App Clip</a>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <section class="hero">
+          <div>
+            <div class="eyebrow">Free • Ad-free • No subscription</div>
+            <h1>Free Leben in Deutschland practice app</h1>
+            <p class="lead">
+              Prepare for the German citizenship exam with a free, ad-free study app designed to help learners practice key questions and improve confidence before the test.
+            </p>
+
+            <div class="cta-row">
+              <a class="primary-btn" href="https://lebenindeutschland2027.de/clip">Open App Clip</a>
+              <a class="secondary-btn" href="/practice/">Explore practice</a>
+            </div>
+
+            <div class="trust-row" aria-label="Product benefits">
+              <span class="trust-pill">Free to use</span>
+              <span class="trust-pill">No ads</span>
+              <span class="trust-pill">No paywall</span>
+            </div>
+          </div>
+
+          <aside class="hero-card" aria-label="Quick app overview">
+            <div class="mini-label">Study focus</div>
+            <div class="score">100%</div>
+            <p>
+              Built to support learners preparing for the Leben in Deutschland exam with clear practice content, fast access, and a simple learning experience.
+            </p>
+          </aside>
+        </section>
+
+        <section class="feature-box">
+          <h2 class="section-heading">Why learners use it</h2>
+          <div class="features">
+            <article class="feature">
+              <strong>Free</strong>
+              <p>Study without paying for access, subscriptions, or premium content.</p>
+            </article>
+            <article class="feature">
+              <strong>No ads</strong>
+              <p>Focus on learning without interruptions or distracting marketing.</p>
+            </article>
+            <article class="feature">
+              <strong>Practice exam questions</strong>
+              <p>Build familiarity with the types of questions commonly used in citizenship preparation.</p>
+            </article>
+            <article class="feature">
+              <strong>Fast access</strong>
+              <p>Open directly from the App Clip flow or the web landing page on supported devices.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="faq" aria-labelledby="faq-heading">
+          <h2 id="faq-heading" class="section-heading">Frequently asked questions</h2>
+          <div class="faq-list">
+            <div class="faq-item">
+              <h3>Is Leben in Deutschland free?</h3>
+              <p>Yes. The app is designed to be free to use, with no subscription or paywall.</p>
+            </div>
+            <div class="faq-item">
+              <h3>Does it have ads?</h3>
+              <p>No. The experience is intended to be ad-free so learners can focus on study instead of distractions.</p>
+            </div>
+            <div class="faq-item">
+              <h3>What does it help with?</h3>
+              <p>It supports preparation for the German citizenship exam and the Leben in Deutschland test with practice content and study support.</p>
+            </div>
+            <div class="faq-item">
+              <h3>Is it available on iPhone?</h3>
+              <p>Yes. The project includes direct App Clip support for a quick launch flow on compatible iPhone devices.</p>
+            </div>
+          </div>
+        </section>
+
+        <div class="cta-banner">
+          <div>
+            <h3>Start preparing today</h3>
+            <p>Use the App Clip flow or visit the full-page experience for quick access.</p>
+          </div>
+          <a class="primary-btn" href="https://lebenindeutschland2027.de/full-page-experience/">Open full page</a>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="container footer-wrap">
+        <span>© 2026 Leben in Deutschland</span>
+        <span>Free • Ad-free • Exam preparation</span>
+      </div>
+    </footer>
+  </body>
 </html>
