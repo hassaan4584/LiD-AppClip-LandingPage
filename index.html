@@ -19,15 +19,10 @@
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": ["WebSite", "Organization"],
+        "@type": "WebSite",
         "name": "Leben in Deutschland",
         "url": "https://lebenindeutschland2027.de/",
-        "description": "Free, ad-free practice app and study resource for the German citizenship exam and Leben in Deutschland test.",
-        "sameAs": [
-          "https://lebenindeutschland2027.de/",
-          "https://lebenindeutschland2027.de/clip",
-          "https://lebenindeutschland2027.de/full-page-experience"
-        ]
+        "description": "Free, ad-free practice app and study resource for the German citizenship exam and Leben in Deutschland test."
       }
     </script>
     <script type="application/ld+json">
@@ -37,54 +32,13 @@
         "name": "Leben in Deutschland",
         "applicationCategory": "EducationApplication",
         "operatingSystem": ["iOS", "Web"],
-        "description": "Free, ad-free practice app for the German citizenship exam and Leben in Deutschland test.",
         "offers": {
           "@type": "Offer",
           "price": "0",
-          "priceCurrency": "EUR",
-          "availability": "https://schema.org/InStock"
+          "priceCurrency": "EUR"
         },
         "isAccessibleForFree": true,
-        "featureList": [
-          "Free to use",
-          "No ads",
-          "German citizenship exam practice",
-          "Leben in Deutschland study content",
-          "App Clip compatible"
-        ],
-        "url": "https://lebenindeutschland2027.de/"
-      }
-    </script>
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "mainEntity": [
-          {
-            "@type": "Question",
-            "name": "Is the app free?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Yes. The goal is to make Leben in Deutschland study content free to use and free from ads."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Does it have ads?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "No. The project is designed to be ad-free and subscription-free for learners preparing for the German citizenship exam."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "What does it help with?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "It supports preparation for the German citizenship exam and the Leben in Deutschland test through practice questions and study content."
-            }
-          }
-        ]
+        "url": "https://apps.apple.com/de/app/leben-in-deutschland-test-2027/id6745673617"
       }
     </script>
     <style>
@@ -385,13 +339,22 @@
         flex-wrap: wrap;
       }
 
-      .support-link {
+      .footer-links {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 18px;
+      }
+
+      .support-link,
+      .store-link {
         color: var(--primary-dark);
         font-weight: 700;
         text-decoration: none;
       }
 
-      .support-link:hover {
+      .support-link:hover,
+      .store-link:hover {
         text-decoration: underline;
       }
 
@@ -534,8 +497,11 @@
     <footer>
       <div class="container footer-wrap">
         <span>© 2026 Leben in Deutschland</span>
-        <span>Free • Ad-free • Exam preparation</span>
-        <a class="support-link" href="/support/">Support the project</a>
+        <div class="footer-links">
+          <span>Free • Ad-free • Exam preparation</span>
+          <a class="store-link" href="https://apps.apple.com/de/app/leben-in-deutschland-test-2027/id6745673617" target="_blank" rel="noopener noreferrer">Get the app</a>
+          <a class="support-link" href="/support/">Support the project</a>
+        </div>
       </div>
     </footer>
   </body>
