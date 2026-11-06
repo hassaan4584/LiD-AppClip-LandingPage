@@ -7,6 +7,7 @@
     <meta name="description" content="Practice for the German citizenship exam with free, ad-free Leben in Deutschland style questions and study support." />
     <meta name="robots" content="index,follow" />
     <link rel="canonical" href="https://lebenindeutschland2027.de/practice/" />
+    <link rel="stylesheet" href="/styles.css" />
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -17,81 +18,91 @@
       }
     </script>
     <style>
-      :root {
-        --bg: #ecf8f4;
-        --card: #ffffff;
-        --primary: #0f766e;
-        --primary-dark: #0d5d55;
-        --text: #12242f;
-        --muted: #536777;
-        --border: #dfe9ef;
+      .practice-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 18px;
+        margin-top: 28px;
       }
-      * { box-sizing: border-box; }
-      body {
-        margin: 0;
-        font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", sans-serif;
-        background: linear-gradient(180deg, #edf9f7 0%, #f7fafb 100%);
-        color: var(--text);
-      }
-      .container { width: min(980px, calc(100% - 32px)); margin: 0 auto; }
-      main { padding: 48px 0 80px; }
-      .card {
-        background: rgba(255,255,255,0.72);
+
+      .practice-card {
+        background: rgba(255, 255, 255, 0.72);
         border: 1px solid var(--border);
-        border-radius: 24px;
-        padding: 36px 28px;
+        border-radius: 20px;
+        padding: 20px 18px;
       }
-      h1 {
-        margin: 0 0 18px;
-        font-size: clamp(2.2rem, 4vw, 3.2rem);
-        letter-spacing: -0.06em;
+
+      .practice-card strong {
+        display: block;
+        margin-bottom: 8px;
       }
-      p, li {
-        color: var(--muted);
-        line-height: 1.8;
-      }
+
       .question-list {
         margin-top: 24px;
         display: grid;
         gap: 16px;
       }
+
       .question {
         padding: 20px 18px;
         border: 1px solid var(--border);
         border-radius: 18px;
-        background: rgba(255,255,255,0.7);
+        background: rgba(255, 255, 255, 0.7);
       }
+
       .question strong {
         display: block;
         margin-bottom: 8px;
       }
-      .footer {
-        margin-top: 28px;
-        display: flex;
-        flex-wrap: wrap;
-        gap: 18px;
-        align-items: center;
-        color: var(--muted);
-        font-size: 0.94rem;
-      }
-      .footer a {
-        color: var(--primary-dark);
-        text-decoration: none;
-        font-weight: 700;
-      }
-      .footer a:hover {
-        text-decoration: underline;
+
+      @media (max-width: 760px) {
+        .practice-grid {
+          grid-template-columns: 1fr;
+        }
       }
     </style>
   </head>
   <body>
-    <main>
+    <header class="site-header">
+      <div class="container site-nav">
+        <a class="brand" href="/">Leben in Deutschland</a>
+        <nav class="site-nav__links" aria-label="Main navigation">
+          <a href="/about/">About</a>
+          <a href="/practice/">Practice</a>
+          <a href="/faq/">FAQ</a>
+          <a href="/support/">Support</a>
+          <a href="https://lebenindeutschland2027.de/full-page-experience/">Full Page</a>
+        </nav>
+        <a class="button--primary" href="https://lebenindeutschland2027.de/clip">Open App Clip</a>
+      </div>
+    </header>
+
+    <main class="page-main">
       <div class="container">
-        <div class="card">
-          <h1>Practice for the German citizenship exam</h1>
-          <p>
-            The project focuses on helping learners practice the kind of questions they may encounter in the Leben in Deutschland exam, using a simple and accessible format.
-          </p>
+        <div class="page-card">
+          <div class="page-badge">Practice</div>
+          <h1 class="page-title">Prepare with a simple, focused study flow</h1>
+
+          <div class="page-copy">
+            <p>
+              The goal is to help learners build confidence with the kinds of topics and questions they often encounter in the German citizenship test and Life in Germany preparation.
+            </p>
+          </div>
+
+          <div class="practice-grid">
+            <div class="practice-card">
+              <strong>Politics & society</strong>
+              <span>Democracy, rights, and civic life</span>
+            </div>
+            <div class="practice-card">
+              <strong>History</strong>
+              <span>Germany’s past and national identity</span>
+            </div>
+            <div class="practice-card">
+              <strong>Daily life</strong>
+              <span>Legal basics, responsibilities, and social values</span>
+            </div>
+          </div>
 
           <div class="question-list">
             <div class="question">
@@ -107,14 +118,23 @@
               <span>What do citizens need to know about democratic values and participation?</span>
             </div>
           </div>
+
+          <div class="cta-row" style="display:flex; flex-wrap:wrap; gap:16px; margin-top:26px;">
+            <a class="button--primary" href="https://lebenindeutschland2027.de/clip">Start practicing</a>
+            <a class="button--secondary" href="/faq/">Read the FAQ</a>
+          </div>
         </div>
       </div>
     </main>
 
-    <div class="container footer">
-      <span>© 2026 Leben in Deutschland</span>
-      <a href="https://apps.apple.com/app/apple-store/id6745673617" target="_blank" rel="noopener noreferrer">Get the app</a>
-      <a href="/">Home</a>
-    </div>
+    <footer class="site-footer">
+      <div class="site-footer__inner">
+        <span>© 2026 Leben in Deutschland</span>
+        <div class="site-footer__links">
+          <a href="https://apps.apple.com/app/apple-store/id6745673617" target="_blank" rel="noopener noreferrer">Get the app</a>
+          <a href="/">Home</a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

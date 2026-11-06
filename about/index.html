@@ -7,6 +7,7 @@
     <meta name="description" content="Learn about the Leben in Deutschland project: free, ad-free preparation for the German citizenship exam and life in Germany test." />
     <meta name="robots" content="index,follow" />
     <link rel="canonical" href="https://lebenindeutschland2027.de/about/" />
+    <link rel="stylesheet" href="/styles.css" />
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -16,104 +17,63 @@
         "description": "Learn about the free, ad-free project supporting preparation for the German citizenship exam and Leben in Deutschland test."
       }
     </script>
-    <style>
-      :root {
-        --bg: #ecf8f4;
-        --card: #ffffff;
-        --primary: #0f766e;
-        --primary-dark: #0d5d55;
-        --text: #12242f;
-        --muted: #536777;
-        --border: #dfe9ef;
-      }
-      * { box-sizing: border-box; }
-      body {
-        margin: 0;
-        font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", sans-serif;
-        background: linear-gradient(180deg, #edf9f7 0%, #f7fafb 100%);
-        color: var(--text);
-      }
-      .container { width: min(980px, calc(100% - 32px)); margin: 0 auto; }
-      main { padding: 48px 0 80px; }
-      .card {
-        background: rgba(255,255,255,0.72);
-        border: 1px solid var(--border);
-        border-radius: 24px;
-        padding: 36px 28px;
-      }
-      h1 {
-        margin: 0 0 18px;
-        font-size: clamp(2.2rem, 4vw, 3.2rem);
-        letter-spacing: -0.06em;
-      }
-      p, li {
-        color: var(--muted);
-        line-height: 1.8;
-        font-size: 1.06rem;
-      }
-      ul { padding-left: 20px; }
-      .badge {
-        display: inline-block;
-        margin-bottom: 18px;
-        padding: 8px 12px;
-        border-radius: 999px;
-        background: rgba(15, 118, 110, 0.06);
-        border: 1px solid rgba(15, 118, 110, 0.12);
-        color: var(--primary-dark);
-        font-size: 0.75rem;
-        font-weight: 800;
-        letter-spacing: 0.08em;
-        text-transform: uppercase;
-      }
-      .footer {
-        margin-top: 28px;
-        display: flex;
-        flex-wrap: wrap;
-        gap: 18px;
-        align-items: center;
-        color: var(--muted);
-        font-size: 0.94rem;
-      }
-      .footer a {
-        color: var(--primary-dark);
-        text-decoration: none;
-        font-weight: 700;
-      }
-      .footer a:hover {
-        text-decoration: underline;
-      }
-    </style>
   </head>
   <body>
-    <main>
+    <header class="site-header">
+      <div class="container site-nav">
+        <a class="brand" href="/">Leben in Deutschland</a>
+        <nav class="site-nav__links" aria-label="Main navigation">
+          <a href="/about/">About</a>
+          <a href="/practice/">Practice</a>
+          <a href="/faq/">FAQ</a>
+          <a href="/support/">Support</a>
+          <a href="https://lebenindeutschland2027.de/full-page-experience/">Full Page</a>
+        </nav>
+        <a class="button--primary" href="https://lebenindeutschland2027.de/clip">Open App Clip</a>
+      </div>
+    </header>
+
+    <main class="page-main">
       <div class="container">
-        <div class="card">
-          <div class="badge">About</div>
-          <h1>About Leben in Deutschland</h1>
-          <p>
-            Leben in Deutschland is a free learning project designed to support people preparing for the German citizenship exam and the Leben in Deutschland test.
-          </p>
-          <p>
-            The goal is simple: provide helpful preparation content in a way that is free to use, easy to access, and free from advertising interruptions.
-          </p>
-          <ul>
+        <div class="page-card">
+          <div class="page-badge">About</div>
+          <h1 class="page-title">A simpler way to prepare for the German citizenship exam</h1>
+
+          <div class="page-copy">
+            <p>
+              Leben in Deutschland is a free learning project designed to make exam preparation more approachable for people studying the German citizenship test and Life in Germany material.
+            </p>
+            <p>
+              The idea is simple: give learners a clear, accessible, and distraction-free study experience without forcing them through ads, subscriptions, or paywalls.
+            </p>
+          </div>
+
+          <ul class="page-list">
             <li>Free study support</li>
-            <li>No ads</li>
+            <li>No ads or interruptions</li>
             <li>No subscription requirement</li>
-            <li>Practice for the German citizenship exam</li>
-            <li>Fast access via App Clip and web experience</li>
+            <li>Quick access through App Clip and web experience</li>
+            <li>Focused content for citizenship exam preparation</li>
           </ul>
-          <p>
-            This project exists to make learning more accessible and less stressful for people preparing for important official study material.
-          </p>
+
+          <div class="page-copy">
+            <p>
+              This project exists to reduce friction for learners who want a calm, direct way to study and build confidence before the exam.
+            </p>
+          </div>
         </div>
       </div>
     </main>
 
-    <div class="container footer">
-      <span>© 2026 Leben in Deutschland</span>
-      <a href="https://apps.apple.com/app/apple-store/id6745673617" target="_blank" rel="noopener noreferrer">Get the app</a>
-      <a href="/">Home</a>
-    </div>
+    <footer class="site-footer">
+      <div class="site-footer__inner">
+        <span>© 2026 Leben in Deutschland</span>
+        <div class="site-footer__links">
+          <span>Free • Ad-free • Exam preparation</span>
+          <a href="https://apps.apple.com/app/apple-store/id6745673617" target="_blank" rel="noopener noreferrer">Get the app</a>
+          <a href="/">Home</a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

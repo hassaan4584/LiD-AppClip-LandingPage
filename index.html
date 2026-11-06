@@ -323,39 +323,137 @@
         color: var(--muted);
       }
 
-      footer {
-        padding: 32px 0 48px;
-        color: var(--muted);
-        font-size: 0.95rem;
+      .section-block {
+        margin-top: 80px;
       }
 
-      .footer-wrap {
-        border-top: 1px solid rgba(15, 118, 110, 0.1);
-        padding-top: 22px;
+      .section-header {
+        margin-bottom: 24px;
+      }
+
+      .section-header .eyebrow {
+        margin-bottom: 12px;
+      }
+
+      .story-grid {
+        display: grid;
+        grid-template-columns: 1.2fr 0.8fr;
+        gap: 22px;
+      }
+
+      .story-card,
+      .story-panel,
+      .step-card,
+      .mini-card {
+        background: rgba(255, 255, 255, 0.7);
+        border: 1px solid var(--border);
+        border-radius: 22px;
+        box-shadow: 0 12px 30px rgba(18, 36, 47, 0.04);
+      }
+
+      .story-card {
+        padding: 28px 24px;
+      }
+
+      .story-card p {
+        margin: 0 0 16px;
+        color: var(--muted);
+        line-height: 1.8;
+      }
+
+      .story-card ul {
+        margin: 0;
+        padding-left: 20px;
+        color: var(--muted);
+        line-height: 1.9;
+      }
+
+      .story-panel {
+        padding: 24px 22px;
+      }
+
+      .story-panel .mini-label {
+        margin-bottom: 8px;
+      }
+
+      .stats {
+        display: grid;
+        gap: 12px;
+        margin-top: 18px;
+      }
+
+      .stat {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        gap: 18px;
-        flex-wrap: wrap;
+        gap: 12px;
+        padding: 12px 14px;
+        border-radius: 16px;
+        background: rgba(15, 118, 110, 0.04);
+        border: 1px solid rgba(15, 118, 110, 0.08);
       }
 
-      .footer-links {
-        display: flex;
-        flex-wrap: wrap;
+      .stat strong {
+        font-size: 1.15rem;
+      }
+
+      .stat span {
+        color: var(--muted);
+      }
+
+      .steps {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 18px;
+      }
+
+      .step-card {
+        padding: 22px 20px;
+      }
+
+      .step-number {
+        display: inline-flex;
         align-items: center;
+        justify-content: center;
+        width: 34px;
+        height: 34px;
+        border-radius: 50%;
+        background: rgba(15, 118, 110, 0.09);
+        color: var(--primary-dark);
+        font-weight: 800;
+        margin-bottom: 12px;
+      }
+
+      .step-card h3 {
+        margin: 0 0 10px;
+        font-size: 1.1rem;
+      }
+
+      .step-card p {
+        margin: 0;
+        color: var(--muted);
+        line-height: 1.7;
+      }
+
+      .mini-card-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
         gap: 18px;
       }
 
-      .support-link,
-      .store-link {
-        color: var(--primary-dark);
-        font-weight: 700;
-        text-decoration: none;
+      .mini-card {
+        padding: 22px 18px;
       }
 
-      .support-link:hover,
-      .store-link:hover {
-        text-decoration: underline;
+      .mini-card strong {
+        display: block;
+        margin-bottom: 8px;
+        font-size: 1.08rem;
+      }
+
+      .mini-card span {
+        color: var(--muted);
+        line-height: 1.7;
       }
 
       @media (max-width: 860px) {
@@ -364,7 +462,10 @@
           padding-top: 30px;
         }
 
-        .features {
+        .features,
+        .steps,
+        .mini-card-grid,
+        .story-grid {
           grid-template-columns: repeat(2, minmax(0, 1fr));
         }
       }
@@ -382,7 +483,10 @@
           flex-wrap: wrap;
         }
 
-        .features {
+        .features,
+        .steps,
+        .mini-card-grid,
+        .story-grid {
           grid-template-columns: 1fr;
         }
 
@@ -396,11 +500,11 @@
   <body>
     <header>
       <div class="container nav">
-        <a class="brand" href="/">Leben in Deutschland</a>
+        <a class="brand" href="#top">Leben in Deutschland</a>
         <nav class="nav-links" aria-label="Main navigation">
-          <a href="/about/">About</a>
-          <a href="/practice/">Practice</a>
-          <a href="/faq/">FAQ</a>
+          <a href="#about">About</a>
+          <a href="#practice">Practice</a>
+          <a href="#faq">FAQ</a>
           <a href="/support/">Support</a>
           <a href="https://lebenindeutschland2027.de/full-page-experience/">Full Page</a>
         </nav>
@@ -408,26 +512,27 @@
       </div>
     </header>
 
-    <main>
+    <main id="top">
       <div class="container">
-        <section class="hero">
+        <section class="hero" aria-labelledby="hero-title">
           <div>
             <div class="eyebrow">Free • Ad-free • No subscription</div>
-            <h1>Free Leben in Deutschland practice app</h1>
+            <h1 id="hero-title">Free Leben in Deutschland practice, made simple.</h1>
             <p class="lead">
-              Prepare for the German citizenship exam with a free, ad-free study app designed to help learners practice key questions and improve confidence before the test.
+              Prepare for the German citizenship exam with a calm, focused study experience built for quick practice, better confidence, and less stress.
             </p>
 
             <div class="cta-row">
               <a class="primary-btn" href="https://lebenindeutschland2027.de/clip">Open App Clip</a>
               <a class="store-btn" href="https://apps.apple.com/app/apple-store/id6745673617" target="_blank" rel="noopener noreferrer">Get the app</a>
-              <a class="secondary-btn" href="/practice/">Explore practice</a>
+              <a class="secondary-btn" href="#practice">Explore practice</a>
             </div>
 
             <div class="trust-row" aria-label="Product benefits">
               <span class="trust-pill">Free to use</span>
               <span class="trust-pill">No ads</span>
               <span class="trust-pill">No paywall</span>
+              <span class="trust-pill">iPhone ready</span>
             </div>
           </div>
 
@@ -435,61 +540,151 @@
             <div class="mini-label">Study focus</div>
             <div class="score">100%</div>
             <p>
-              Built to support learners preparing for the Leben in Deutschland exam with clear practice content, fast access, and a simple learning experience.
+              Designed to help learners practice key topics, feel more prepared, and approach the exam with confidence.
             </p>
           </aside>
         </section>
 
-        <section class="feature-box">
-          <h2 class="section-heading">Why learners use it</h2>
-          <div class="features">
-            <article class="feature">
-              <strong>Free</strong>
-              <p>Study without paying for access, subscriptions, or premium content.</p>
+        <section id="about" class="section-block" aria-labelledby="about-heading">
+          <div class="section-header">
+            <div class="eyebrow">About</div>
+            <h2 id="about-heading" class="section-heading">A clearer way to prepare</h2>
+          </div>
+
+          <div class="story-grid">
+            <div class="story-card">
+              <p>
+                Leben in Deutschland is a free learning project created for people preparing for the German citizenship exam and Life in Germany test.
+              </p>
+              <p>
+                The goal is simple: make revision more approachable, easier to understand, and free from unnecessary distractions.
+              </p>
+              <ul>
+                <li>Free study support</li>
+                <li>No ads or interruptions</li>
+                <li>No subscription requirement</li>
+                <li>Quick access through App Clip and web</li>
+              </ul>
+            </div>
+
+            <div class="story-panel">
+              <div class="mini-label">Built for learners</div>
+              <div class="stats">
+                <div class="stat">
+                  <strong>Free</strong>
+                  <span>no cost</span>
+                </div>
+                <div class="stat">
+                  <strong>Simple</strong>
+                  <span>small steps</span>
+                </div>
+                <div class="stat">
+                  <strong>Focused</strong>
+                  <span>exam prep</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="practice" class="section-block" aria-labelledby="practice-heading">
+          <div class="section-header">
+            <div class="eyebrow">Practice</div>
+            <h2 id="practice-heading" class="section-heading">Study the topics that matter most</h2>
+          </div>
+
+          <div class="mini-card-grid">
+            <article class="mini-card">
+              <strong>Politics & society</strong>
+              <span>Understand democracy, rights, and everyday civic life in Germany.</span>
             </article>
-            <article class="feature">
-              <strong>No ads</strong>
-              <p>Focus on learning without interruptions or distracting marketing.</p>
+            <article class="mini-card">
+              <strong>History</strong>
+              <span>Review key milestones and the context behind Germany’s modern society.</span>
             </article>
-            <article class="feature">
-              <strong>Practice exam questions</strong>
-              <p>Build familiarity with the types of questions commonly used in citizenship preparation.</p>
+            <article class="mini-card">
+              <strong>Daily life</strong>
+              <span>Practice questions around responsibilities, values, and participation.</span>
             </article>
-            <article class="feature">
-              <strong>Fast access</strong>
-              <p>Open directly from the App Clip flow or the web landing page on supported devices.</p>
+          </div>
+
+          <div class="faq-list" style="margin-top: 24px;">
+            <div class="faq-item">
+              <h3>Sample question 1</h3>
+              <p>What is the purpose of the German citizenship exam?</p>
+            </div>
+            <div class="faq-item">
+              <h3>Sample question 2</h3>
+              <p>Which rights and responsibilities are important for life in Germany?</p>
+            </div>
+            <div class="faq-item">
+              <h3>Sample question 3</h3>
+              <p>What do citizens need to know about democratic values and participation?</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="section-block" aria-labelledby="how-heading">
+          <div class="section-header">
+            <div class="eyebrow">How it works</div>
+            <h2 id="how-heading" class="section-heading">A quick path to practice</h2>
+          </div>
+
+          <div class="steps">
+            <article class="step-card">
+              <div class="step-number">1</div>
+              <h3>Open the App Clip</h3>
+              <p>Launch instantly from your iPhone or directly from the web experience.</p>
+            </article>
+            <article class="step-card">
+              <div class="step-number">2</div>
+              <h3>Answer a few questions</h3>
+              <p>Work through compact practice sessions that build familiarity and confidence.</p>
+            </article>
+            <article class="step-card">
+              <div class="step-number">3</div>
+              <h3>Build confidence</h3>
+              <p>Use short, focused revision sessions to prepare before the exam.</p>
             </article>
           </div>
         </section>
 
-        <section class="faq" aria-labelledby="faq-heading">
-          <h2 id="faq-heading" class="section-heading">Frequently asked questions</h2>
+        <section id="faq" class="faq section-block" aria-labelledby="faq-heading">
+          <div class="section-header">
+            <div class="eyebrow">FAQ</div>
+            <h2 id="faq-heading" class="section-heading">Questions people usually ask</h2>
+          </div>
+
           <div class="faq-list">
             <div class="faq-item">
-              <h3>Is Leben in Deutschland free?</h3>
-              <p>Yes. The app is designed to be free to use, with no subscription or paywall.</p>
+              <h3>Is it free?</h3>
+              <p>Yes. The project is designed to be free to use and accessible without a paywall.</p>
             </div>
             <div class="faq-item">
               <h3>Does it have ads?</h3>
-              <p>No. The experience is intended to be ad-free so learners can focus on study instead of distractions.</p>
+              <p>No. The experience is meant to stay clean, focused, and distraction-free.</p>
             </div>
             <div class="faq-item">
               <h3>What does it help with?</h3>
-              <p>It supports preparation for the German citizenship exam and the Leben in Deutschland test with practice content and study support.</p>
+              <p>It supports preparation for the German citizenship exam and the Leben in Deutschland test.</p>
             </div>
             <div class="faq-item">
               <h3>Is it available on iPhone?</h3>
-              <p>Yes. The project includes direct App Clip support for a quick launch flow on compatible iPhone devices.</p>
+              <p>Yes. It includes App Clip support for compatible iPhone devices and a direct web flow.</p>
+            </div>
+            <div class="faq-item">
+              <h3>Is this official study material?</h3>
+              <p>It is a study aid designed to help learners practice and prepare with confidence, not an official government publication.</p>
             </div>
           </div>
         </section>
 
         <div class="cta-banner">
           <div>
-            <h3>Start preparing today</h3>
-            <p>Use the App Clip flow or visit the full-page experience for quick access.</p>
+            <h3>Keep learning without the noise</h3>
+            <p>Use the App Clip flow or visit the full-page experience to start preparing today.</p>
           </div>
-          <a class="primary-btn" href="https://lebenindeutschland2027.de/full-page-experience/">Open full page</a>
+          <a class="primary-btn" href="/support/">Support the project</a>
         </div>
       </div>
     </main>
@@ -498,9 +693,11 @@
       <div class="container footer-wrap">
         <span>© 2026 Leben in Deutschland</span>
         <div class="footer-links">
-          <span>Free • Ad-free • Exam preparation</span>
+          <a href="#about">About</a>
+          <a href="#practice">Practice</a>
+          <a href="#faq">FAQ</a>
+          <a href="/support/">Support</a>
           <a class="store-link" href="https://apps.apple.com/app/apple-store/id6745673617" target="_blank" rel="noopener noreferrer">Get the app</a>
-          <a class="support-link" href="/support/">Support the project</a>
         </div>
       </div>
     </footer>

@@ -7,6 +7,7 @@
     <meta name="description" content="Frequently asked questions about the free, ad-free Leben in Deutschland practice app and German citizenship exam study resource." />
     <meta name="robots" content="index,follow" />
     <link rel="canonical" href="https://lebenindeutschland2027.de/faq/" />
+    <link rel="stylesheet" href="/styles.css" />
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -49,102 +50,59 @@
         ]
       }
     </script>
-    <style>
-      :root {
-        --bg: #ecf8f4;
-        --card: #ffffff;
-        --primary: #0f766e;
-        --primary-dark: #0d5d55;
-        --text: #12242f;
-        --muted: #536777;
-        --border: #dfe9ef;
-      }
-      * { box-sizing: border-box; }
-      body {
-        margin: 0;
-        font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", sans-serif;
-        background: linear-gradient(180deg, #edf9f7 0%, #f7fafb 100%);
-        color: var(--text);
-      }
-      .container { width: min(980px, calc(100% - 32px)); margin: 0 auto; }
-      main { padding: 48px 0 80px; }
-      .card {
-        background: rgba(255,255,255,0.72);
-        border: 1px solid var(--border);
-        border-radius: 24px;
-        padding: 36px 28px;
-      }
-      h1 {
-        margin: 0 0 18px;
-        font-size: clamp(2.2rem, 4vw, 3.2rem);
-        letter-spacing: -0.06em;
-      }
-      .qa {
-        margin-top: 24px;
-        border-top: 1px solid var(--border);
-        padding-top: 18px;
-      }
-      .qa h2 {
-        margin: 0 0 8px;
-        font-size: 1.1rem;
-      }
-      .qa p {
-        margin: 0 0 20px;
-        color: var(--muted);
-        line-height: 1.75;
-      }
-      .footer {
-        margin-top: 28px;
-        display: flex;
-        flex-wrap: wrap;
-        gap: 18px;
-        align-items: center;
-        color: var(--muted);
-        font-size: 0.94rem;
-      }
-      .footer a {
-        color: var(--primary-dark);
-        text-decoration: none;
-        font-weight: 700;
-      }
-      .footer a:hover {
-        text-decoration: underline;
-      }
-    </style>
   </head>
   <body>
-    <main>
+    <header class="site-header">
+      <div class="container site-nav">
+        <a class="brand" href="/">Leben in Deutschland</a>
+        <nav class="site-nav__links" aria-label="Main navigation">
+          <a href="/about/">About</a>
+          <a href="/practice/">Practice</a>
+          <a href="/faq/">FAQ</a>
+          <a href="/support/">Support</a>
+          <a href="https://lebenindeutschland2027.de/full-page-experience/">Full Page</a>
+        </nav>
+        <a class="button--primary" href="https://lebenindeutschland2027.de/clip">Open App Clip</a>
+      </div>
+    </header>
+
+    <main class="page-main">
       <div class="container">
-        <div class="card">
-          <h1>Frequently asked questions</h1>
+        <div class="page-card">
+          <div class="page-badge">FAQ</div>
+          <h1 class="page-title">Frequently asked questions</h1>
 
-          <div class="qa">
-            <h2>Is the app free?</h2>
-            <p>Yes. The project is designed to be free to use and accessible without a paywall.</p>
+          <div class="qa" style="margin-top: 24px; border-top: 1px solid var(--border); padding-top: 18px;">
+            <h2 style="margin: 0 0 8px; font-size: 1.1rem;">Is the app free?</h2>
+            <p style="margin: 0 0 20px; color: var(--muted); line-height:1.75;">Yes. The project is designed to be free to use and accessible without a paywall.</p>
           </div>
 
-          <div class="qa">
-            <h2>Does it contain ads?</h2>
-            <p>No. The design goal is an ad-free, distraction-free learning experience.</p>
+          <div class="qa" style="margin-top: 24px; border-top: 1px solid var(--border); padding-top: 18px;">
+            <h2 style="margin: 0 0 8px; font-size: 1.1rem;">Does it contain ads?</h2>
+            <p style="margin: 0 0 20px; color: var(--muted); line-height:1.75;">No. The design goal is an ad-free, distraction-free learning experience.</p>
           </div>
 
-          <div class="qa">
-            <h2>What is it for?</h2>
-            <p>It supports preparation for the German citizenship exam and the Leben in Deutschland test.</p>
+          <div class="qa" style="margin-top: 24px; border-top: 1px solid var(--border); padding-top: 18px;">
+            <h2 style="margin: 0 0 8px; font-size: 1.1rem;">What is it for?</h2>
+            <p style="margin: 0 0 20px; color: var(--muted); line-height:1.75;">It supports preparation for the German citizenship exam and the Leben in Deutschland test.</p>
           </div>
 
-          <div class="qa">
-            <h2>Is it available on iPhone?</h2>
-            <p>Yes. It includes App Clip support for compatible iPhone devices and a direct web entry flow.</p>
+          <div class="qa" style="margin-top: 24px; border-top: 1px solid var(--border); padding-top: 18px;">
+            <h2 style="margin: 0 0 8px; font-size: 1.1rem;">Is it available on iPhone?</h2>
+            <p style="margin: 0 0 20px; color: var(--muted); line-height:1.75;">Yes. It includes App Clip support for compatible iPhone devices and a direct web entry flow.</p>
           </div>
         </div>
       </div>
     </main>
 
-    <div class="container footer">
-      <span>© 2026 Leben in Deutschland</span>
-      <a href="https://apps.apple.com/app/apple-store/id6745673617" target="_blank" rel="noopener noreferrer">Get the app</a>
-      <a href="/">Home</a>
-    </div>
+    <footer class="site-footer">
+      <div class="site-footer__inner">
+        <span>© 2026 Leben in Deutschland</span>
+        <div class="site-footer__links">
+          <a href="https://apps.apple.com/app/apple-store/id6745673617" target="_blank" rel="noopener noreferrer">Get the app</a>
+          <a href="/">Home</a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
