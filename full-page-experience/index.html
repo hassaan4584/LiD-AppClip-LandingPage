@@ -43,6 +43,64 @@
 
       body {
         min-height: 100vh;
+        padding: 0;
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      .container {
+        width: min(1120px, calc(100% - 32px));
+        margin: 0 auto;
+      }
+
+      .site-header {
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        backdrop-filter: blur(10px);
+        background: rgba(237, 249, 247, 0.82);
+        border-bottom: 1px solid rgba(15, 118, 110, 0.08);
+      }
+
+      .site-nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        min-height: 72px;
+        gap: 20px;
+      }
+
+      .brand {
+        font-weight: 800;
+        letter-spacing: -0.04em;
+        font-size: 1.15rem;
+      }
+
+      .site-nav__links {
+        display: flex;
+        align-items: center;
+        gap: 22px;
+        color: var(--muted);
+        font-size: 0.95rem;
+      }
+
+      .nav-cta {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 12px 18px;
+        border-radius: 14px;
+        background: linear-gradient(180deg, var(--primary) 0%, var(--primary-dark) 100%);
+        color: white;
+        font-weight: 700;
+        box-shadow: 0 16px 28px rgba(15, 118, 110, 0.18);
+      }
+
+      .page-shell {
+        min-height: calc(100vh - 72px);
         display: grid;
         place-items: center;
         padding: 24px;
@@ -144,30 +202,59 @@
         font-size: 0.9rem;
         color: var(--muted);
       }
+
+      @media (max-width: 620px) {
+        .site-nav {
+          flex-wrap: wrap;
+          padding: 14px 0 18px;
+        }
+
+        .site-nav__links {
+          width: 100%;
+          justify-content: space-between;
+          gap: 10px;
+          flex-wrap: wrap;
+        }
+      }
     </style>
   </head>
   <body>
-    <main class="card">
-      <div class="eyebrow">Full Page Experience</div>
-      <h1>Free Leben in Deutschland practice app</h1>
-      <p>
-        Study for the German citizenship exam with a free, ad-free resource designed to help learners prepare with confidence.
-      </p>
-
-      <div class="badges">
-        <span class="badge">Free</span>
-        <span class="badge">No ads</span>
-        <span class="badge">No subscription</span>
-        <span class="badge">Exam prep</span>
+    <header class="site-header">
+      <div class="container site-nav">
+        <a class="brand" href="/">Leben in Deutschland</a>
+        <nav class="site-nav__links" aria-label="Main navigation">
+          <a href="/about/">About</a>
+          <a href="/practice/">Practice</a>
+          <a href="/faq/">FAQ</a>
+          <a href="/support/">Support</a>
+        </nav>
+        <a class="nav-cta" href="https://lebenindeutschland2027.de/clip">Open App Clip</a>
       </div>
+    </header>
 
-      <div class="cta-row">
-        <a class="cta" href="https://lebenindeutschland2027.de/clip/">Open App Clip</a>
-        <a class="cta-secondary" href="https://apps.apple.com/app/apple-store/id6745673617" target="_blank" rel="noopener noreferrer">Get the app</a>
-      </div>
+    <main class="page-shell">
+      <div class="card">
+        <div class="eyebrow">Full Page Experience</div>
+        <h1>Free Leben in Deutschland practice app</h1>
+        <p>
+          Study for the German citizenship exam with a free, ad-free resource designed to help learners prepare with confidence.
+        </p>
 
-      <div class="meta">
-        Route: https://lebenindeutschland2027.de/full-page-experience/
+        <div class="badges">
+          <span class="badge">Free</span>
+          <span class="badge">No ads</span>
+          <span class="badge">No subscription</span>
+          <span class="badge">Exam prep</span>
+        </div>
+
+        <div class="cta-row">
+          <a class="cta" href="https://lebenindeutschland2027.de/clip/">Open App Clip</a>
+          <a class="cta-secondary" href="https://apps.apple.com/app/apple-store/id6745673617" target="_blank" rel="noopener noreferrer">Get the app</a>
+        </div>
+
+        <div class="meta">
+          Route: https://lebenindeutschland2027.de/full-page-experience/
+        </div>
       </div>
     </main>
   </body>
