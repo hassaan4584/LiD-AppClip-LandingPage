@@ -9,6 +9,10 @@
           {
             "/": "/clip",
             "comment": "Open the App Clip landing page"
+          },
+          {
+            "/": "/full-page-experience",
+            "comment": "Open the Full Page Experience"
           }
         ]
       }
