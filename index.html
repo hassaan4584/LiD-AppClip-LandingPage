@@ -132,6 +132,14 @@
         border: 1px solid rgba(15, 118, 110, 0.15);
       }
 
+      .app-clip-only {
+        display: none;
+      }
+
+      body.is-safari .app-clip-only {
+        display: inline-flex;
+      }
+
       .store-btn {
         color: #0d5d55;
         background: rgba(15, 118, 110, 0.04);
@@ -498,6 +506,17 @@
     </style>
   </head>
   <body>
+    <script>
+      (function () {
+        const ua = navigator.userAgent;
+        const isSafari = /^((?!chrome|android).)*safari/i.test(ua) || (/iPhone|iPad|Macintosh/i.test(ua) && !/Chrome|CriOS|Android/i.test(ua));
+
+        if (isSafari) {
+          document.body.classList.add('is-safari');
+        }
+      })();
+    </script>
+
     <header>
       <div class="container nav">
         <a class="brand" href="#top">Leben in Deutschland</a>
@@ -508,7 +527,7 @@
           <a href="/c/">/c</a>
           <a href="/support/">Support</a>
         </nav>
-        <a class="primary-btn" href="https://lebenindeutschland2027.de/c">Open App Clip</a>
+        <a class="primary-btn app-clip-only" href="https://lebenindeutschland2027.de/c">Open App Clip</a>
       </div>
     </header>
 
@@ -523,8 +542,8 @@
             </p>
 
             <div class="cta-row">
-              <a class="primary-btn" href="https://lebenindeutschland2027.de/clip">Open App Clip</a>
-              <a class="primary-btn" href="https://appclip.apple.com/id?p=com.hassaan.LebenInDeutschland.Clip" style="background: linear-gradient(180deg, #0ea5e9 0%, #0284c7 100%);">Direct App Clip</a>
+              <a class="primary-btn app-clip-only" href="https://lebenindeutschland2027.de/clip">Open App Clip</a>
+              <a class="primary-btn app-clip-only" href="https://appclip.apple.com/id?p=com.hassaan.LebenInDeutschland.Clip" style="background: linear-gradient(180deg, #0ea5e9 0%, #0284c7 100%);">Direct App Clip</a>
               <a class="store-btn" href="https://apps.apple.com/app/apple-store/id6745673617" target="_blank" rel="noopener noreferrer">Get the app</a>
               <a class="secondary-btn" href="#practice">Explore practice</a>
             </div>

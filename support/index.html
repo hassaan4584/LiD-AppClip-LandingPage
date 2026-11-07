@@ -58,7 +58,7 @@
           </ul>
 
           <div class="cta-row" style="display:flex; flex-wrap:wrap; gap:16px; margin-top:24px;">
-            <a class="button--primary" href="https://buymeacoffee.com/hassaanahmed" target="_blank" rel="noopener noreferrer">Buy me a coffee</a>
+            <a class="button--primary buy-me-coffee-btn" href="https://buymeacoffee.com/hassaanahmed" target="_blank" rel="noopener noreferrer">Buy me a coffee</a>
             <a class="button--secondary" href="/">Back to homepage</a>
           </div>
 
@@ -78,5 +78,21 @@
         </div>
       </div>
     </footer>
+
+    <script>
+      (function () {
+        const now = new Date();
+        const isFriday = now.getDay() === 5;
+        const hours = now.getHours();
+        const shouldHide = isFriday && hours >= 8 && hours < 16;
+
+        if (shouldHide) {
+          const button = document.querySelector('.buy-me-coffee-btn');
+          if (button) {
+            button.style.display = 'none';
+          }
+        }
+      })();
+    </script>
   </body>
 </html>
