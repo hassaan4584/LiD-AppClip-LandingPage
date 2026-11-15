@@ -3,16 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Free Leben in Deutschland Practice App | No Ads | German Citizenship Exam Prep</title>
+    <title>Free Leben in Deutschland Practice Test App| No Ads | German Citizenship Exam Prep</title>
     <meta
       name="description"
-      content="Prepare for the German citizenship exam with a free, ad-free Leben in Deutschland practice app. Study questions, mock tests, and exam preparation without paying or seeing ads."
+      content="Prepare for the German citizenship exam with free Leben in Deutschland practice questions, mock tests, and study guidance. No ads, no paywall, and no subscription."
     />
     <meta name="robots" content="index,follow" />
-    <meta name="keywords" content="Leben in Deutschland, German citizenship exam, free German citizenship practice, no ads app, German test prep, citizenship exam study" />
+    <meta
+      name="keywords"
+      content="Leben in Deutschland practice test, German citizenship exam, Life in Germany test, German citizenship practice questions, free German citizenship exam prep, mock test, study guide"
+    />
     <link rel="canonical" href="https://lebenindeutschland2027.de/" />
-    <meta property="og:title" content="Free Leben in Deutschland Practice App" />
-    <meta property="og:description" content="Free, ad-free practice for the German citizenship exam and Life in Germany test." />
+    <meta property="og:title" content="Free Leben in Deutschland Practice Test | German Citizenship Exam Prep" />
+    <meta property="og:description" content="Free German citizenship exam practice with mock tests, study questions, and Life in Germany preparation support." />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://lebenindeutschland2027.de/" />
     <meta property="og:image" content="https://lebenindeutschland2027.de/og-image.png" />
@@ -53,6 +56,7 @@
         ]
       }
     </script>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <style>
       :root {
         --bg: #ecf8f4;
@@ -577,6 +581,96 @@
         cursor: pointer;
       }
 
+      .resource-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 18px;
+        margin-top: 24px;
+      }
+
+      .resource-card {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        background: rgba(255, 255, 255, 0.72);
+        border: 1px solid var(--border);
+        border-radius: 20px;
+        padding: 20px 18px;
+      }
+
+      .resource-card strong {
+        font-size: 1.08rem;
+      }
+
+      .resource-card p {
+        margin: 0;
+        color: var(--muted);
+        line-height: 1.7;
+      }
+
+      .resource-card a {
+        margin-top: auto;
+        color: var(--primary-dark);
+        font-weight: 800;
+      }
+
+      .disclaimer-box {
+        margin-top: 28px;
+        background: rgba(15, 118, 110, 0.04);
+        border: 1px solid rgba(15, 118, 110, 0.12);
+        border-radius: 20px;
+        padding: 22px 20px;
+      }
+
+      .disclaimer-box strong {
+        display: block;
+        margin-bottom: 8px;
+        color: var(--primary-dark);
+        font-size: 0.82rem;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      .disclaimer-box p {
+        margin: 0;
+        line-height: 1.75;
+        color: var(--muted);
+      }
+
+      .review-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 18px;
+        margin-top: 24px;
+      }
+
+      .review-card {
+        background: rgba(255, 255, 255, 0.72);
+        border: 1px solid var(--border);
+        border-radius: 20px;
+        padding: 20px 18px;
+      }
+
+      .review-card .stars {
+        color: #f59e0b;
+        letter-spacing: 0.08em;
+        margin-bottom: 12px;
+        font-size: 1rem;
+      }
+
+      .review-card p {
+        margin: 0;
+        color: var(--muted);
+        line-height: 1.8;
+      }
+
+      .review-card strong {
+        display: block;
+        margin-top: 12px;
+        color: var(--primary-dark);
+        font-size: 0.92rem;
+      }
+
       @media (max-width: 860px) {
         .hero {
           grid-template-columns: 1fr;
@@ -586,7 +680,9 @@
         .features,
         .steps,
         .mini-card-grid,
-        .story-grid {
+        .story-grid,
+        .resource-grid,
+        .review-grid {
           grid-template-columns: repeat(2, minmax(0, 1fr));
         }
       }
@@ -607,7 +703,9 @@
         .features,
         .steps,
         .mini-card-grid,
-        .story-grid {
+        .story-grid,
+        .resource-grid,
+        .review-grid {
           grid-template-columns: 1fr;
         }
 
@@ -635,9 +733,11 @@
         <a class="brand" href="#top">Leben in Deutschland</a>
         <nav class="nav-links" aria-label="Main navigation">
           <a href="#about">About</a>
-          <a href="#practice">Practice</a>
-          <a href="#faq">FAQ</a>
-          <a href="/c/">/c</a>
+          <a href="/practice/">Practice</a>
+          <a href="/german-citizenship-test/">Citizenship Test</a>
+          <a href="/how-to-prepare/">How to prepare</a>
+          <a href="/study-guide/">Study guide</a>
+          <a href="/faq/">FAQ</a>
           <a href="/support/">Support</a>
         </nav>
         <a class="primary-btn app-clip-only" href="https://lebenindeutschland2027.de/c">Open App Clip</a>
@@ -649,31 +749,31 @@
         <section class="hero" aria-labelledby="hero-title">
           <div>
             <div class="eyebrow">Free • Ad-free • No subscription</div>
-            <h1 id="hero-title">Free Leben in Deutschland practice, made simple.</h1>
+            <h1 id="hero-title">Free Leben in Deutschland practice for the German citizenship exam.</h1>
             <p class="lead">
-              Prepare for the German citizenship exam with a calm, focused study experience built for quick practice, better confidence, and less stress.
+              Prepare for the Life in Germany test with free practice questions, mock tests, and a focused study routine designed to make exam preparation clearer and less stressful.
             </p>
 
             <div class="cta-row">
               <a class="primary-btn app-clip-only" href="https://lebenindeutschland2027.de/clip">Open App Clip</a>
               <a class="primary-btn app-clip-only" href="https://appclip.apple.com/id?p=com.hassaan.LebenInDeutschland.Clip" style="background: linear-gradient(180deg, #0ea5e9 0%, #0284c7 100%);">Direct App Clip</a>
               <a class="store-btn" href="https://apps.apple.com/app/apple-store/id6745673617?pt=126241179&ct=lid-website&mt=8" target="_blank" rel="noopener noreferrer">Get the app</a>
-              <a class="secondary-btn" href="#practice">Explore practice</a>
+              <a class="secondary-btn" href="/practice/">Explore practice</a>
             </div>
 
             <div class="trust-row" aria-label="Product benefits">
-              <span class="trust-pill">Free to use</span>
+              <span class="trust-pill">Free practice</span>
               <span class="trust-pill">No ads</span>
-              <span class="trust-pill">No paywall</span>
-              <span class="trust-pill">iPhone ready</span>
+              <span class="trust-pill">Mock tests</span>
+              <span class="trust-pill">Offline study</span>
             </div>
           </div>
 
           <aside class="hero-card" aria-label="Quick app overview">
             <div class="mini-label">Study focus</div>
-            <div class="score">100%</div>
+            <div class="score">4.8★</div>
             <p>
-              Designed to help learners practice key topics, feel more prepared, and approach the exam with confidence.
+              Built for learners preparing for the German citizenship exam with realistic question practice, topic review, and better confidence before the test.
             </p>
           </aside>
         </section>
@@ -681,7 +781,7 @@
         <section id="about" class="section-block" aria-labelledby="about-heading">
           <div class="section-header">
             <div class="eyebrow">About</div>
-            <h2 id="about-heading" class="section-heading">A clearer way to prepare</h2>
+            <h2 id="about-heading" class="section-heading">A clearer way to prepare for the Life in Germany test</h2>
           </div>
 
           <div class="story-grid">
@@ -690,13 +790,13 @@
                 Leben in Deutschland is a free learning project created for people preparing for the German citizenship exam and Life in Germany test.
               </p>
               <p>
-                The goal is simple: make revision more approachable, easier to understand, and free from unnecessary distractions.
+                The aim is to support exam preparation with simple, relevant practice questions, mock tests, and a less stressful study flow.
               </p>
               <ul>
                 <li>Free study support</li>
                 <li>No ads or interruptions</li>
                 <li>No subscription requirement</li>
-                <li>Quick access through App Clip and web</li>
+                <li>Topic-based practice and revision</li>
               </ul>
             </div>
 
@@ -709,7 +809,7 @@
                 </div>
                 <div class="stat">
                   <strong>Simple</strong>
-                  <span>small steps</span>
+                  <span>clear flow</span>
                 </div>
                 <div class="stat">
                   <strong>Focused</strong>
@@ -717,6 +817,42 @@
                 </div>
               </div>
             </div>
+          </div>
+        </section>
+
+        <section class="section-block" aria-labelledby="resources-heading">
+          <div class="section-header">
+            <div class="eyebrow">Resources</div>
+            <h2 id="resources-heading" class="section-heading">Guides and learning resources</h2>
+          </div>
+
+          <div class="resource-grid">
+            <article class="resource-card">
+              <strong>German citizenship test</strong>
+              <p>Learn what the test covers, how it works, and what topics matter most during preparation.</p>
+              <a href="/german-citizenship-test/">Read the guide →</a>
+            </article>
+
+            <article class="resource-card">
+              <strong>Leben in Deutschland practice</strong>
+              <p>Use topic-based study and mock test routines to improve confidence and review weak areas.</p>
+              <a href="/leben-in-deutschland-practice/">Start practicing →</a>
+            </article>
+
+            <article class="resource-card">
+              <strong>How to prepare</strong>
+              <p>Follow a practical exam-prep plan with short, consistent study sessions and repeat review.</p>
+              <a href="/how-to-prepare/">See the steps →</a>
+            </article>
+          </div>
+        </section>
+
+        <section class="section-block" aria-labelledby="disclaimer-heading">
+          <div class="disclaimer-box">
+            <strong>Disclaimer</strong>
+            <p>
+              This project is a study aid created to support preparation for the German citizenship exam and Life in Germany test. It is not an official BAMF or government publication, and success in the app does not guarantee passing the official exam. Please always check the latest information from official sources.
+            </p>
           </div>
         </section>
 
@@ -826,8 +962,8 @@
               <p>Yes. It includes App Clip support for compatible iPhone devices and a direct web flow.</p>
             </div>
             <div class="faq-item">
-              <h3>Is this official study material?</h3>
-              <p>It is a study aid designed to help learners practice and prepare with confidence, not an official government publication.</p>
+              <h3>Can I study offline?</h3>
+              <p>Yes. The app is designed to let learners continue studying without requiring an active internet connection.</p>
             </div>
           </div>
         </section>
@@ -839,17 +975,69 @@
           </div>
           <a class="primary-btn" href="/support/">Support the project</a>
         </div>
+
+        <div class="disclaimer-box">
+          <strong>Disclaimer</strong>
+          <p>
+            This project is not affiliated with or endorsed by any official government entity. It is an independent initiative aimed at providing study support for the German citizenship exam and the Leben in Deutschland test.
+          </p>
+        </div>
+
+        <section class="section-block" aria-labelledby="reviews-heading">
+          <div class="section-header">
+            <div class="eyebrow">Reviews</div>
+            <h2 id="reviews-heading" class="section-heading">People keep coming back to it</h2>
+          </div>
+
+          <div class="review-grid">
+            <article class="review-card">
+              <div class="stars">★★★★★</div>
+              <p>
+                “I used this app for only 4–5 days and aced the exam. I didn’t know the German at all, but the quick preparation flow and focused practice made it much easier to study. It’s more than perfect for this exam preparation.”
+              </p>
+              <strong>App Store review</strong>
+            </article>
+
+            <article class="review-card">
+              <div class="stars">★★★★★</div>
+              <p>
+                “The app has all the features needed to prepare for the test. There are no ads and no distractions. Amazing app. I would not mind paying a few euros and purchasing the app.”
+              </p>
+              <strong>App Store review</strong>
+            </article>
+
+            <article class="review-card">
+              <div class="stars">★★★★★</div>
+              <p>
+                “I’ve tried about a dozen Leben in Deutschland apps. I stuck with this one. I love how you can categorize the types of questions you want to see.”
+              </p>
+              <strong>App Store review</strong>
+            </article>
+
+            <article class="review-card">
+              <div class="stars">★★★★★</div>
+              <p>
+                “This app is absolutely the best tool for preparing for the LID test. The questions are up-to-date, clearly explained, and available in both German and English. The interface is simple, intuitive, and perfect for daily practice.”
+              </p>
+              <strong>App Store review</strong>
+            </article>
+          </div>
+        </section>
       </div>
     </main>
 
-    <footer>
-      <div class="container footer-wrap">
+    <footer class="site-footer">
+      <div class="site-footer__inner">
         <span>© 2026 Leben in Deutschland</span>
-        <div class="footer-links">
-          <a href="#about">About</a>
-          <a href="#practice">Practice</a>
-          <a href="#faq">FAQ</a>
+        <div class="site-footer__links">
+          <a href="/about/">About</a>
+          <a href="/practice/">Practice</a>
+          <a href="/german-citizenship-test/">Citizenship Test</a>
+          <a href="/study-guide/">Study guide</a>
+          <a href="/faq/">FAQ</a>
           <a href="/support/">Support</a>
+          <a href="/privacy-policy/">Privacy Policy</a>
+          <a href="/terms-and-conditions/">Terms</a>
           <a class="store-link" href="https://apps.apple.com/app/apple-store/id6745673617?pt=126241179&ct=lid-website&mt=8" target="_blank" rel="noopener noreferrer">Get the app</a>
         </div>
       </div>

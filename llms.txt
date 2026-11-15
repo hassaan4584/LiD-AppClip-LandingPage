@@ -5,14 +5,26 @@ This site provides a free, ad-free resource for learners preparing for the Germa
 
 ## Key pages
 - https://lebenindeutschland2027.de/
-- https://lebenindeutschland2027.de/full-page-experience/
-- https://lebenindeutschland2027.de/clip/
+- https://lebenindeutschland2027.de/about/
+- https://lebenindeutschland2027.de/practice/
+- https://lebenindeutschland2027.de/german-citizenship-test/
+- https://lebenindeutschland2027.de/leben-in-deutschland-practice/
+- https://lebenindeutschland2027.de/study-guide/
+- https://lebenindeutschland2027.de/how-to-prepare/
+- https://lebenindeutschland2027.de/berlin-appointment-guide/
+- https://lebenindeutschland2027.de/faq/
+- https://lebenindeutschland2027.de/support/
+- https://lebenindeutschland2027.de/appstore-reviews/
+- https://lebenindeutschland2027.de/privacy-policy/
+- https://lebenindeutschland2027.de/terms-and-conditions/
 
 ## Topics covered
 - Free Leben in Deutschland practice
 - German citizenship exam preparation
-- No ads and no paywall study app
-- App Clip entry point for compatible iPhone devices
+- Study guide and mock-test preparation
+- Berlin appointment and official process guidance
+- FAQ and support for learners
+- App Store reviews and user feedback
 
 ## Important note
-The project is intended to be free to use and free from advertising interruptions for learners.
+This project is a free study resource designed to support learners preparing for the German citizenship exam and the Life in Germany test. It is not an official BAMF or government publication.
